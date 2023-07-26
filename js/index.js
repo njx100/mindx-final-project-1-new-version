@@ -152,7 +152,7 @@ if (users) {
   hiddenNavUrser.style = "visibility: visible";
   welcome.innerHTML = `<div class="text-start"><p class="urser-login">Hi!<strong class="text-uppercase" > ${users.name}</strong>, Welcome back!<br/><span style="
   color: #808080;
-  font-size: 0.9rem"><i>Your restaurent admin dashboard</i></span></p></div>`;
+  font-size: 0.9rem"><i>Your restaurant admin dashboard</i></span></p></div>`;
   avaUser.innerHTML = `<img src="${users.profile_photo}" alt="${users.name}">`;
 }
 
