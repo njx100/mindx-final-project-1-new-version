@@ -1,3 +1,18 @@
-.gradient-custom {
-  background: white;
+body {
+  background-image: url(https://images.pexels.com/photos/4551128/pexels-photo-4551128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+}
+
+.bg-custom {
+  background: rgba(33, 37, 41, 0.9) !important;
+  box-shadow: 4px 4px 8px rgba(33, 37, 41, 0.6);
+  border: none !important;
+}
+
+label {
+  background: none;
+}
+
+h1 {
+  font-size: 50px !important;
 }

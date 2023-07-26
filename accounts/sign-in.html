@@ -21,13 +21,14 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.16/dist/sweetalert2.min.css
   </head>
   <body>
     <form>
-      <section id="signInSection" class="vh-100 gradient-custom">
-        <div class="container py-5 h-100">
-          <div
-            class="row d-flex justify-content-center align-items-center h-100"
-          >
+      <section id="signInSection" class="justify-content-center">
+        <div class="container my-auto py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center">
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-              <div class="card bg-dark text-white" style="border-radius: 1rem">
+              <div
+                class="card bg-custom text-white"
+                style="border-radius: 1rem"
+              >
                 <div class="card-body p-5 text-center">
                   <div class="mb-md-5 mt-md-4 pb-5">
                     <h1 class="my-3 mx-1 fw-bold">
@@ -38,29 +39,24 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.16/dist/sweetalert2.min.css
                         ><span class="d-inline fs-1">rora</span></span
                       >
                     </h1>
-                    <p class="text-white-50 mb-5">
-                      Please enter your login and password!
-                    </p>
 
-                    <div class="form-outline form-white mb-4">
+                    <div class="form-floating mb-4 mt-5">
                       <input
                         type="email"
                         id="signInEmail"
-                        class="form-control form-control-lg"
+                        class="form-control"
                       />
-                      <label class="form-label" for="signInEmail">Email</label>
+                      <label for="signInEmail">Email</label>
                     </div>
 
-                    <div class="form-outline form-white mb-4">
+                    <div class="form-floating mb-4">
                       <input
                         type="password"
                         id="signInPassword"
                         autocomplete="on"
-                        class="form-control form-control-lg"
+                        class="form-control"
                       />
-                      <label class="form-label" for="signInPassword"
-                        >Password</label
-                      >
+                      <label for="signInPassword">Password</label>
                     </div>
 
                     <p class="small mb-5 pb-lg-2">
