@@ -10,7 +10,7 @@ body {
 .chart-right .body-height {
   height: 30.5rem;
 }
-.chart-right .body-height .chart-height {
+.chart-right .body-height {
   height: 28rem;
 }
 .chart-inner span.increase {
@@ -236,6 +236,10 @@ hr.h-color {
 .search-small {
   top: 80px;
   left: 100px;
+}
+
+.value-track-order:focus {
+  box-shadow: none;
 }
 
 .live {

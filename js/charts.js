@@ -8,7 +8,7 @@ import {
 // init chart chart earnings , order , pending , revenue , expense
 const divChart = document.querySelectorAll("div.chart-inner");
 const arrDiv = Array.from(divChart);
-arrDiv[0].innerHTML = `<div class="cart rounded-1 mt-2 bg-white">
+arrDiv[0].innerHTML = `<div class="cart rounded-1 mt-2 mt-xl-0 bg-white">
 <div class="card-body pt-3">
   <div class="row justify-content-between">
     <div class="col-6">
@@ -22,7 +22,7 @@ arrDiv[0].innerHTML = `<div class="cart rounded-1 mt-2 bg-white">
   <div id="chart_order" class="home_chart_widget"></div>
 </div>
 </div>`;
-arrDiv[1].innerHTML = `<div class="cart rounded-1 mt-2 bg-white">
+arrDiv[1].innerHTML = `<div class="cart rounded-1 mt-2 mt-xl-0 bg-white">
 <div class="card-body pt-3">
   <div class="row justify-content-between">
     <div class="col-6">
