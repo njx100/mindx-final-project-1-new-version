@@ -603,7 +603,6 @@ new Chart(ctx, {
 // active tab
 reviewsContentEl.style.display = "none";
 graphEl.addEventListener("click", () => {
-  console.log("graph clicked");
   graphContentEl.style.display = "block";
   reviewsContentEl.style.display = "none";
   graphEl.classList.remove("selected-tab");
@@ -612,7 +611,6 @@ graphEl.addEventListener("click", () => {
 });
 
 reviewsEl.addEventListener("click", () => {
-  console.log("reviews clicked");
   graphContentEl.style.display = "none";
   reviewsContentEl.style.display = "block";
   graphEl.classList.remove("selected-tab");
@@ -662,8 +660,6 @@ new Chart(visitHrChart, {
     ],
   },
   options: {
-    // responsive: true,
-    // maintainAspectRatio: false,
     tension: 0.5,
     scales: {
       y: {

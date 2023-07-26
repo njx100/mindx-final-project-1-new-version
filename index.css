@@ -283,10 +283,6 @@ hr.h-color {
   background: #0f0f0f !important;
 }
 
-.selected-tab {
-  border-bottom: 2px solid rgba(149, 204, 71, 0.7) !important;
-}
-
 .graph-tab,
 .reviews-tab {
   border: 2px solid rgba(149, 204, 71, 0) !important;
@@ -296,7 +292,8 @@ hr.h-color {
 .graph-tab:hover,
 .reviews-tab:hover,
 .graph-tab:active,
-.reviews-tab:active {
+.reviews-tab:active,
+.selected-tab {
   border: 2px solid rgba(149, 204, 71, 0) !important;
   border-bottom: 2px solid rgba(149, 204, 71, 0.7) !important;
   transition: all ease 250ms;
