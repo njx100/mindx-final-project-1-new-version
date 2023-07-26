@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Drora Restaurant</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- fav icon -->
+    <link
+      rel="shortcut icon"
+      href="./images/icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="main-container d-flex">
+      <div class="sidebar" id="side_nav">
+        <div class="header-box px-2 pt-3 pb-4">
+          <h1 class="fs-4 my-3 mx-1 fw-bold">
+            <span class="bg-white text-dark rounded shadow px-1 ms-1 fs-1"
+              >D</span
+            ><span class="text-white"
+              ><span class="d-inline fs-1">rora</span></span
+            >
+          </h1>
+          <button
+            class="btn sidebar-close-btn d-lg-none"
+            type="button"
+            title="close-side-nav"
+          >
+            <i class="fa-solid fa-xmark fa-2x" style="color: #ffffff"></i>
+          </button>
+        </div>
+        <ul class="sidebar-group list-unstyled px-2">
+          <li class="sidebar-group-item active" data-id="dashboard">
+            <a href="#top" class="text-decoration-none px-3 py-2 d-block"
+              ><i class="fa-solid fa-house px-0 me-2"></i
+              ><span class="">Dashboard</span></a
+            >
+          </li>
+          <li class="sidebar-group-item" data-id="menu">
+            <a href="#top" class="text-decoration-none px-3 py-2 d-block"
+              ><i class="fa-solid fa-list px-0 me-2"></i
+              ><span class="">Menu</span></a
+            >
+          </li>
+          <li class="sidebar-group-item" data-id="messages">
+            <a
+              href="#top"
+              class="text-decoration-none px-3 py-2 d-flex justify-content-between"
+            >
+              <span
+                ><i class="fa-regular fa-comment px-0 me-2"></i
+                ><span class="">Messages</span></span
+              >
+              <span class="bg-warning rounded-pill text-light px-2">12</span>
+            </a>
+          </li>
+          <li class="sidebar-group-item" data-id="services">
+            <a href="#top" class="text-decoration-none px-3 py-2 d-block"
+              ><i class="fa-solid fa-envelope-open-text px-0 me-2"></i
+              ><span class="">Services</span></a
+            >
+          </li>
+          <li class="sidebar-group-item" data-id="customers">
+            <a href="#top" class="text-decoration-none px-3 py-2 d-block"
+              ><i class="fa-regular fa-address-book px-0 me-2"></i
+              ><span class="">Customers</span></a
+            >
+          </li>
+        </ul>
+        <hr class="h-color mx-3" />
+
+        <ul class="sidebar-group list-unstyled px-2">
+          <li class="list-group-item" data-id="settings">
+            <a href="#top" class="text-decoration-none px-3 py-2 d-block"
+              ><i class="fa-solid fa-gear px-0 me-2"></i
+              ><span class="">Settings</span></a
+            >
+          </li>
+          <li class="sidebar-group-item" data-id="notifications">
+            <a href="#top" class="text-decoration-none px-3 py-2 d-block"
+              ><i class="fa-regular fa-bell px-0 me-2"></i
+              ><span class="">Notifications</span></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <!-- navbar -->
+        <nav class="col-12 py-4 navbar navbar-expand-lg navbar-light bg-white">
+          <div class="container-fluid">
+            <button
+              class="col-auto btn px-0 px-sm-2 py-0 text-center open-btn d-lg-none"
+              title="close-side-nav"
+            >
+              <i class="fa-solid fa-bars fa-2x"></i>
+            </button>
+            <form
+              class="col-auto search-container float-start d-none d-sm-flex align-items-center ms-2"
+            >
+              <i
+                class="fa-solid fa-magnifying-glass float-left ms-1 d-none d-md-block"
+                style="color: #000000"
+              ></i>
+              <input
+                type="search"
+                class="form-control mx-0 border-0 float-start shadow-none"
+                placeholder="Search here"
+                name=""
+                id=""
+              />
+            </form>
+            <ul
+              class="nav-hidden col right-navbar navbar-nav me-3 d-flex flex-row justify-content-end align-items-center"
+            >
+              <li class="nav-item me-3">
+                <button class="btn p-0 d-none d-lg-inline" title="nav-item">
+                  <i class="fa-solid fa-expand" style="color: #000000"></i>
+                </button>
+              </li>
+              <li class="nav-item me-3">
+                <button class="btn p-0" title="nav-item">
+                  <i
+                    class="fa-regular fa-envelope navbar-message"
+                    style="color: #000000"
+                  ></i>
+                </button>
+              </li>
+              <li class="nav-item me-3">
+                <button class="btn p-0" title="nav-item">
+                  <i class="fa-regular fa-bell" style="color: #000000"></i>
+                </button>
+              </li>
+              <li class="nav-item">
+                <div class="navbar" id="navbarNavDarkDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-link dropdown">
+                      <a
+                        class="dropdown-toggle d-flex align-items-center text-dark"
+                        id="accountDropDownMenu"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="profile-bg"></div>
+                      </a>
+                      <ul
+                        class="dropdown-menu dropdown-menu-end dropdown-menu-light"
+                        aria-labelledby="accountDropDownMenu"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">Account</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Settings</a>
+                        </li>
+                        <li>
+                          <a
+                            id="log-out"
+                            class="dropdown-item"
+                            href="./index.html"
+                            >Logout</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <form
+            class="col-auto search-container float-start d-sm-none d-flex align-items-center mt-3 ms-3"
+          >
+            <i
+              class="fa-solid fa-magnifying-glass float-left"
+              style="color: #000000"
+            ></i>
+            <input
+              type="search"
+              class="form-control mx-0 border-0 float-start shadow-none"
+              placeholder="Search here"
+              name=""
+              id=""
+            />
+          </form>
+        </nav>
+        <!-- main content -->
+        <div
+          class="container-fluid col-12 v-100 text-center bg-light d-none p-3 content-page live"
+          id="dashboard-content"
+        >
+          <!-- welcom urser , noti login -->
+          <div class="row text-center urser-content">
+            <div class="col-12 col-md-12 col-lg-4" id="welcome">
+              <p class="urser-login">
+                Please
+                <a class="text-uppercase" href="./accounts/sign-in.html"
+                  >Login</a
+                >
+                or
+                <a class="text-uppercase" href="./accounts/sign-up.html"
+                  >Register</a
+                >
+              </p>
+            </div>
+            <div class="col-12 col-md-12 col-lg-8">
+              <div class="card mb-0 border-0">
+                <div class="card-body">
+                  <h4 class="card-title text-start text-uppercase">
+                    Track Order
+                  </h4>
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control value-track-order"
+                          placeholder="Enter ORDER-#"
+                        />
+                        <div class="input-group-append">
+                          <button
+                            class="btn btn-primary btn-track-order"
+                            type="button"
+                            title="track-order"
+                          >
+                            Track
+                          </button>
+                        </div>
+                      </div>
+                      <span
+                        id="order-status"
+                        class="d-block mt-1 text-sm-start"
+                      ></span>
+                    </div>
+                    <div class="col-md-7 p-0 mt-3 mt-md-0">
+                      <div class="steps">
+                        <ul class="calcel multi-steps">
+                          <li>Cancelled</li>
+                        </ul>
+                        <ul class="open list-unstyled multi-steps">
+                          <li class="active">Ordered</li>
+                          <li>Pending</li>
+                          <li>Preparing</li>
+                          <li>Delivery</li>
+                          <li>Received</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- earning chart group -->
+          <div class="row">
+            <!-- Chart Left -->
+            <div class="chart-left col-12 col-md-6">
+              <div class="row">
+                <!-- Order -->
+                <div class="chart-inner col-sm-6 col-xxl-6 col-xl-6"></div>
+                <!-- End Order -->
+                <!-- Pending -->
+                <div class="chart-inner col-sm-6 col-xxl-6 col-xl-6"></div>
+                <!-- End Pending -->
+                <!-- Revenue -->
+                <div class="chart-inner col-sm-6 col-xxl-6 col-xl-6"></div>
+                <!-- End Revenue -->
+                <!-- Expense -->
+                <div class="chart-inner col-sm-6 col-xxl-6 col-xl-6"></div>
+                <!-- End Expense -->
+              </div>
+              <!-- End Chart Left -->
+            </div>
+            <!-- Chart Right -->
+            <div class="chart-right col-12 col-md-6 pt-2">
+              <div class="card rounded-1 border-0">
+                <div class="card-body body-height">
+                  <div id="chart_earnings" class="chart-height"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- menu row -->
+          <div class="my-3 mx-0">
+            <div class="row menu-row justify-content-around g-1"></div>
+          </div>
+          <!-- restaurant-rating and visit hours container -->
+          <div class="row align-items-top p-0 px-2">
+            <!-- restaurant-rating -->
+            <div
+              class="col-12 col-xxl-6 restaurant-rating bg-white container-fluid mb-3 mb-xxl-0"
+            ></div>
+            <!-- Visit hours -->
+            <div class="col-12 col-xxl-6 visit-hour px-0">
+              <div class="container-fluid h-100 bg-white">
+                <div class="p-3 m-0">
+                  <h4 class="card-title text-start mt-3">VISIT HOUR</h4>
+                  <div class="row day-night-container my-3"></div>
+                  <div class="">
+                    <canvas class="visit-hour-chart w-100 h-100"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- order list -->
+            <div class="card mt-3 box-orders">
+              <div class="card-body container-fluid">
+                <h4 class="card-title fs-5 text-start">ORDER LIST</h4>
+                <div class="table-responsive">
+                  <table class="order-table table fs-6">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="text-secondary">ID</th>
+                        <th scope="col" class="text-secondary">ORDER NAME</th>
+                        <th scope="col" class="text-secondary">
+                          CUSTOMER NAME
+                        </th>
+                        <th scope="col" class="text-secondary">LOCATION</th>
+                        <th scope="col" class="text-secondary">
+                          DELIVERY TIME
+                        </th>
+                        <th scope="col" class="text-secondary">QUANTITY</th>
+                        <th scope="col" class="text-secondary">PRICE</th>
+                        <th scope="col" class="text-secondary">$TOTAL</th>
+                        <th scope="col" class="text-secondary">STATUS</th>
+                        <th scope="col" class="text-secondary">ACTION</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- order list end -->
+          </div>
+        </div>
+        <div
+          class="col-12 vh-100 text-center bg-light d-none h1"
+          id="menu-content"
+        >
+          Menu coming soon...
+        </div>
+        <div
+          class="col-12 vh-100 text-center bg-light d-none h1"
+          id="messages-content"
+        >
+          Message coming soon...
+        </div>
+        <div
+          class="col-12 vh-100 text-center bg-light d-none h1"
+          id="services-content"
+        >
+          Service coming soon...
+        </div>
+        <div
+          class="col-12 vh-100 text-center bg-light d-none h1"
+          id="customers-content"
+        >
+          Customers coming soon...
+        </div>
+        <div
+          class="col-12 vh-100 text-center bg-light d-none h1"
+          id="settings-content"
+        >
+          Settings coming soon...
+        </div>
+        <div
+          class="col-12 vh-100 text-center bg-light d-none h1"
+          id="notifications-content"
+        >
+          Notifications coming soon...
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <!-- chart.js Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- hightchart.js -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <!-- librarie alert -->
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.16/dist/sweetalert2.all.min.js
+"></script>
+    <!-- chart -->
+    <script type="module" src="./js/charts.js"></script>
+    <!-- js file -->
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

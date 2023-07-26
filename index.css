@@ -1,0 +1,348 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+/* charts css */
+.chart-wrapper .home_chart_widget {
+  height: 6rem;
+}
+.chart-right .body-height {
+  height: 30.5rem;
+}
+.chart-right .body-height .chart-height {
+  height: 28rem;
+}
+.chart-inner span.increase {
+  color: #95cc47;
+}
+.chart-inner span.decrease {
+  color: #f05050;
+}
+.chart-inner .pd-s {
+  padding-left: 2rem;
+}
+/* track orders css */
+.urser-content .input-group {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+.urser-content .input-group-append {
+  margin-left: -1px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.urser-content .multi-steps {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.urser-content .list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.urser-content ul {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.steps .multi-steps > li {
+  counter-increment: stepNum;
+  font-size: 0.9rem;
+  text-align: center;
+  display: table-cell;
+  position: relative;
+  color: #ee0d0d;
+  list-style: none;
+}
+.steps .multi-steps > li.active ~ li {
+  color: #6c757d;
+}
+
+.steps .multi-steps > li.active:before {
+  content: counter(stepNum);
+  margin: 0 auto 4px;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ee0d0d;
+  border-radius: 5px;
+}
+.steps .multi-steps > li::before {
+  content: "\2713";
+  display: block;
+  margin: 0 auto 4px;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ee0d0d;
+  border-radius: 5px;
+}
+.steps .multi-steps > li.active {
+  counter-increment: stepNum;
+  text-align: center;
+  display: table-cell;
+  position: relative;
+  color: #ee0d0d;
+  list-style: none;
+}
+.steps .multi-steps > li:not(:last-child)::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #ee0d0d;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+}
+.steps .multi-steps > li.active ~ li::after {
+  background-color: #e3eaef;
+}
+.steps .multi-steps > li.active ~ li:before {
+  background-color: #e3eaef;
+  border-color: #e3eaef;
+  content: counter(stepNum);
+  font-family: inherit;
+  font-weight: 400;
+}
+.steps .multi-steps > li.active::after {
+  background-color: #e3eaef;
+}
+.input-group-append .btn {
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+.input-group input.form-control {
+  outline: none;
+}
+
+.urser-content .steps {
+  display: flex;
+}
+.urser-content .steps .calcel {
+  display: none;
+}
+.urser-content span.order-status {
+  text-align: left;
+  font-size: 0.9rem;
+  margin-left: 0.3rem;
+}
+.urser-content strong.status {
+  text-transform: capitalize;
+  color: #ee0d0d;
+}
+.main-container {
+  position: relative;
+}
+/* side navbar css */
+#side_nav {
+  background: rgb(17, 17, 17);
+  min-width: 250px;
+  max-width: 250px;
+  transition: all linear 250ms;
+}
+
+.sidebar .header-box {
+  position: relative;
+}
+
+.sidebar .header-box .sidebar-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  border: none;
+}
+
+.sidebar .header-box .btn:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 200ms;
+}
+
+.right-navbar .profile-bg img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  min-height: 100vh;
+  width: 100%;
+}
+
+hr.h-color {
+  color: #eee;
+}
+
+.sidebar li {
+  margin: 1px;
+}
+
+.sidebar li.active {
+  background: #eee;
+  border-radius: 8px;
+}
+
+.sidebar li.active a,
+.sidebar li.active a:hover {
+  color: #000;
+}
+
+.sidebar li a {
+  color: #eee;
+  transition: all ease-in-out 300ms;
+}
+
+.sidebar li a:hover {
+  background: #eee;
+  border-radius: 8px;
+  color: #000;
+}
+
+.search-small {
+  top: 80px;
+  left: 100px;
+}
+
+.live {
+  display: block !important;
+}
+
+.content-bg {
+  background: #f9fafd;
+}
+.nav-hidden {
+  visibility: hidden;
+}
+.urser-login {
+  width: 100%;
+  padding: 2rem;
+}
+.urser-login a {
+  text-decoration: none;
+  color: #0000ff;
+}
+.urser-login a:hover {
+  font-weight: 600;
+}
+.card-body .card-description .badge-primary {
+  background-color: #ee0d0d;
+}
+/* restaurant css */
+.bg-food {
+  background: #ed0c0a !important;
+}
+
+.bg-service {
+  background: #40c4ff !important;
+}
+
+.bg-waiting_time {
+  background: #95cc46 !important;
+}
+
+.bg-others {
+  background: #0f0f0f !important;
+}
+
+.selected-tab {
+  border-bottom: 2px solid rgba(149, 204, 71, 0.7) !important;
+}
+
+.graph-tab,
+.reviews-tab {
+  border: 2px solid rgba(149, 204, 71, 0) !important;
+  cursor: pointer;
+}
+
+.graph-tab:hover,
+.reviews-tab:hover,
+.graph-tab:active,
+.reviews-tab:active {
+  border: 2px solid rgba(149, 204, 71, 0) !important;
+  border-bottom: 2px solid rgba(149, 204, 71, 0.7) !important;
+  transition: all ease 250ms;
+}
+
+.media img {
+  border-radius: 0;
+  width: 50px;
+}
+/* .height-visit {
+  height: 32rem;
+} */
+.box-orders {
+  border-radius: 0;
+  border: none;
+}
+.order-table tr {
+  height: 3.5rem;
+  vertical-align: middle;
+}
+
+/* respon */
+@media screen and (max-width: 428px) {
+  .height-visit {
+    height: 20rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  #side_nav {
+    margin-left: -250px;
+    position: sticky;
+    min-height: 100vh;
+  }
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+    top: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #side_nav {
+    margin-left: 0px !important;
+    position: static;
+    min-height: 100vh;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .restaurant-rating {
+    border-right: 2px solid #f8f9fa;
+  }
+}
