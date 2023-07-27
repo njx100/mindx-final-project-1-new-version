@@ -1,3 +1,5 @@
+export let restaurantRatings = [220, 420, 260, 460];
+
 // data review
 export let reviewData = [
   {

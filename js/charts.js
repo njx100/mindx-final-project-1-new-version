@@ -1,4 +1,5 @@
 import {
+  restaurantRatings,
   reviewData,
   visitHourData,
   categoriesChart,
@@ -353,10 +354,7 @@ for (let i = 0; i < divs.length; i++) {
   divs[i].innerHTML = `<h4>${sumArr[i].toLocaleString()}</h4>`;
 }
 // init chart restaurant rating
-const food = 220;
-const service = 420;
-const waiting_time = 260;
-const others = 460;
+const [food, service, waiting_time, others] = restaurantRatings;
 const [review_0, review_1, review_2, review_3] = reviewData;
 
 let total = food + service + waiting_time + others;
