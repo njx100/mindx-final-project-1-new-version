@@ -406,7 +406,7 @@ const restaurantRatingHTML = `<div class="card border-0">
         <div>
           <div class="row justify-content-between text-start">
             <p class="col-12 col-lg-6 mb-0">Food</p>
-            <p class="col-12 col-lg-6 mb-2">${food} (${(
+            <p class="col-12 col-lg-6 mb-2 text-xl-end">${food} (${(
   (food / total) *
   100
 ).toFixed(2)}%)</p>
@@ -422,7 +422,7 @@ const restaurantRatingHTML = `<div class="card border-0">
         <div class="mt-4">
           <div class="row justify-content-between text-start">
             <p class="col-12 col-lg-6 mb-0">Service</p>
-            <p class="col-12 col-lg-6 mb-2">${service} (${(
+            <p class="col-12 col-lg-6 mb-2 text-xl-end">${service} (${(
   (service / total) *
   100
 ).toFixed(2)}%)</p>
@@ -438,7 +438,7 @@ const restaurantRatingHTML = `<div class="card border-0">
         <div class="mt-4">
           <div class="row justify-content-between text-start">
             <p class="col-12 col-lg-6 mb-0">Waiting Time</p>
-            <p class="col-12 col-lg-6 mb-2">${waiting_time} (${(
+            <p class="col-12 col-lg-6 mb-2 text-xl-end">${waiting_time} (${(
   (waiting_time / total) *
   100
 ).toFixed(2)}%)</p>
@@ -454,7 +454,7 @@ const restaurantRatingHTML = `<div class="card border-0">
         <div class="mt-4">
           <div class="row justify-content-between text-start">
             <p class="col-12 col-lg-6 mb-0">Others</p>
-            <p class="col-12 col-lg-6 mb-2">${others} (${(
+            <p class="col-12 col-lg-6 mb-2 text-xl-end">${others} (${(
   (others / total) *
   100
 ).toFixed(2)}%)</p>
